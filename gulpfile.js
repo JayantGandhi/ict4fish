@@ -79,7 +79,7 @@ gulp.task('pages', function() {
       data: 'src/data/',
       helpers: 'src/helpers/'
     }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest(''));
 });
 
 gulp.task('pages:reset', function(cb) {
@@ -159,7 +159,7 @@ gulp.task('build', function(done) {
 // Start a server with LiveReload to preview the site in
 gulp.task('server', ['build'], function() {
   browser.init({
-    server: 'dist', port: PORT
+    server: '', port: PORT
   });
 });
 
